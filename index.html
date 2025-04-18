@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-3</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="font-playfair tracking-normal bg-gray-100">
+    <header
+      class="fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-40 bg-transparent"
+    >
+      <!-- latest  -->
+      <div class="p-3 flex bg-green-400" id="latest">
+        <p class="flex-1 text-center">
+          <a href="#" class="underline">New Collection Arrived Shop Now</a>
+        </p>
+        <button class="border-0 bg-transparent cursor-pointer">
+          <svg
+            class="w-7 h-7 to-black"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="{1.5}"
+            stroke="currentColor"
+            className="size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="px-10 py-3">
+        <nav
+          class="flex justify-between items-center rounded-full shadow-xl mt-3 py-2 px-7 bg-white"
+        >
+          <ul class="hidden list-none gap-x-2 lg:flex">
+            <li>
+              <a href="" class="hover:text-neutral-500 transition-colors"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a href="" class="hover:text-neutral-500 transition-colors"
+                >Product</a
+              >
+            </li>
+          </ul>
+          <div class="flex-1">
+            <h2
+              class="uppercase text-left text-2xl font-semibold lg:text-center"
+            >
+              parfum
+            </h2>
+          </div>
+          <ul class="hidden list-none gap-x-2 pr-5 lg:flex">
+            <li>
+              <a href="#" class="hover:text-neutral-500 transition-colors"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-neutral-500 transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="flex gap-x-2 flex-row-reverse">
+            <button
+              class="flex items-center cursor-pointer lg:hidden"
+              id="menu-btn"
+            >
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="{1.5}"
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="{1.5}"
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- mobile menu  -->
+      <ul
+        class="hidden list-none space-y-5 min-h-[50vh] drop-shadow-2xl pt-5 flex-col text-center absolute top-0 left-0 bg-white w-full"
+        id="mobile-menu"
+      >
+        <li>
+          <button id="cancel" class="cursor-pointer">
+            <svg
+              class="w-7 h-7"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a href="#" class="hover:text-neutral-500 transition-colors">Shop</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-neutral-500 transition-colors"
+            >Product</a
+          >
+        </li>
+        <li>
+          <a href="#" class="hover:text-neutral-500 transition-colors">Blog</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-neutral-500 transition-colors"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <!-- hero  -->
+    <div
+      class="h-[50vh] bg-[url('assets/images/hero-bg-image.jpg')] flex justify-center items-end pb-10"
+    >
+      <div>
+        <h class="text-4xl text-center text-white md:text-5xl">All Fragments</h>
+      </div>
+    </div>
+
+    <!-- product listing  -->
+    <div class="py-20 px-10">
+      <div
+        class="grid grid-cols-1 gap-y-7 sm:grid-cols-2 sm:gap-x-3 md:grid-cols-3 md:gap-x-2 lg:grid-cols-4"
+      >
+        <!-- card 1  -->
+        <div class="text-center">
+          <div class="rounded-xl bg-white overflow-hidden">
+            <img
+              src="assets/images/perfume.webp"
+              class="w-[200px] block mx-auto"
+              alt=""
+            />
+          </div>
+          <div class="text-base space-y-2">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="font-bold font-montserrat">15$</p>
+            <a
+              href=""
+              class="bg-green-500 block w-full text-white py-1 px-3 rounded-full hover:bg-green-400 transition-colors"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+        <!-- card 2  -->
+        <div class="text-center">
+          <div class="rounded-xl bg-white overflow-hidden">
+            <img
+              src="assets/images/perfume.webp"
+              class="w-[200px] block mx-auto"
+              alt=""
+            />
+          </div>
+          <div class="text-base space-y-2">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="font-bold font-montserrat">15$</p>
+            <a
+              href=""
+              class="bg-green-500 block w-full text-white py-1 px-3 rounded-full hover:bg-green-400 transition-colors"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="text-center">
+          <div class="rounded-xl bg-white overflow-hidden">
+            <img
+              src="assets/images/perfume.webp"
+              class="w-[200px] block mx-auto"
+              alt=""
+            />
+          </div>
+          <div class="text-base space-y-2">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="font-bold font-montserrat">15$</p>
+            <a
+              href=""
+              class="bg-green-500 block w-full text-white py-1 px-3 rounded-full hover:bg-green-400 transition-colors"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="text-center">
+          <div class="rounded-xl bg-white overflow-hidden">
+            <img
+              src="assets/images/perfume.webp"
+              class="w-[200px] block mx-auto"
+              alt=""
+            />
+          </div>
+          <div class="text-base space-y-2">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="font-bold font-montserrat">15$</p>
+            <a
+              href=""
+              class="bg-green-500 block w-full text-white py-1 px-3 rounded-full hover:bg-green-400 transition-colors"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- poster  -->
+    <div class="w-full">
+      <div
+        class="flex justify-center items-center h-[50vh] bg-[url('assets/images/poster-bg-image.jpg')] bg-no-repeat bg-cover bg-center bg-fixed md:h-[80vh]"
+      >
+        <div class="flex flex-col space-y-4 text-center w-[500px]">
+          <h1 class="text-3xl caption-top text-white md:text-5xl">
+            Elevate everyday moment with extraordinry moment
+          </h1>
+          <div>
+            <a
+              href="#"
+              class="py-2 px-4 bg-white rounded-full hover:ring-1 hover:ring-black/30 hover:ring-offset-3 transition-all"
+              >Shop Our Gragrances</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- image text  -->
+    <div class="py-20 px-10">
+      <div class="flex flex-col items-center md:flex-row">
+        <div class="hidden md:block">
+          <img
+            src="assets/images/cute-grirl-img.avif"
+            class="md:mx-w-150 lg:max-w-120"
+            alt=""
+          />
+        </div>
+        <div>
+          <div class="text-center space-y-4 px-8 md:px-5 lg:px-30">
+            <h1 class="text-2xl">
+              Smell like a <span class="italic">dream</span>
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+              cupiditate ullam, deserunt dolorum alias obcaecati. Dicta
+              voluptatem suscipit praesentium cupiditate, nisi magni. Possimus,
+              id in. Quod enim ab laudantium asperiores.
+            </p>
+            <a
+              href=""
+              class="bg-green-500 block w-full text-black py-1 px-3 rounded-full hover:bg-green-400 transition-colors"
+              >Shop Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- flower color strip  -->
+    <div class="flex justify-around py-2 bg-green-500">
+      <div>
+        <span>Craeted for everyone</span>
+      </div>
+      <div>
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+          />
+        </svg>
+      </div>
+      <div>
+        <span>Craeted for everyone</span>
+      </div>
+      <div>
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- text and image  -->
+    <div class="py-20 px-10">
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div
+          class="grid grid-cols-1 items-end gap-y-4 gap-x-3 md:grid-cols-2 md:gap-y-6 pt-0 md:pt-30"
+        >
+          <div class="col-span-full">
+            <h3 class="text-2xl">
+              Safe for, safe for the <span class="italic">earth</span>
+            </h3>
+          </div>
+          <div class="pt-9 relative">
+            <span class="absolute -top-1 left-0 p-1 rounded-full bg-green-500">
+              <svg
+                class="w-7 h-7"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
+                />
+              </svg>
+            </span>
+            <h5 class="text-base font-semibold">Substantial Sourcing</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              nostrum aliquid illum, distinctio assumenda eveniet
+              necessitatibus? Laborum voluptas voluptate sed. Sapiente, neque
+              accusamus? Voluptates incidunt itaque, tenetur cumque fuga quis.
+            </p>
+          </div>
+          <div class="pt-9 relative">
+            <span class="absolute -top-1 left-0 p-1 rounded-full bg-green-500">
+              <svg
+                class="w-7 h-7"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
+                />
+              </svg>
+            </span>
+            <h5 class="text-base font-semibold">Substantial Sourcing</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              nostrum aliquid illum, distinctio assumenda eveniet
+              necessitatibus? Laborum voluptas voluptate sed. Sapiente, neque
+              accusamus? Voluptates incidunt itaque, tenetur cumque fuga quis.
+            </p>
+          </div>
+          <div class="pt-9 relative">
+            <span class="absolute -top-1 left-0 p-1 rounded-full bg-green-500">
+              <svg
+                class="w-7 h-7"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
+                />
+              </svg>
+            </span>
+            <h5 class="text-base font-semibold">Substantial Sourcing</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              nostrum aliquid illum, distinctio assumenda eveniet
+              necessitatibus? Laborum voluptas voluptate sed. Sapiente, neque
+              accusamus? Voluptates incidunt itaque, tenetur cumque fuga quis.
+            </p>
+          </div>
+          <div class="pt-9 relative">
+            <span class="absolute -top-1 left-0 p-1 rounded-full bg-green-500">
+              <svg
+                class="w-7 h-7"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
+                />
+              </svg>
+            </span>
+            <h5 class="text-base font-semibold">Substantial Sourcing</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              nostrum aliquid illum, distinctio assumenda eveniet
+              necessitatibus? Laborum voluptas voluptate sed. Sapiente, neque
+              accusamus? Voluptates incidunt itaque, tenetur cumque fuga quis.
+            </p>
+          </div>
+        </div>
+        <div class="justify-center items-start hidden md:flex">
+          <div class="w-full rounded-sm overflow-hidden pl-8 h-full">
+            <img
+              class="w-full object-cover rounded-sm h-full"
+              src="assets/images/girl-flower-in-hand-image.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <footer class="pt-4 pb-6 px-10 bg-red-500 space-y-3">
+      <!-- footer layer 1 -->
+      <div class="flex gap-3 flex-col md:flex-row justify-between">
+        <div class="flex mb-3 flex-col">
+          <!-- subscriber form  -->
+          <div class="flex flex-col space-y-2.5">
+            <h3 class="text-white text-lg">
+              We send <span class="font-bold italic">great </span>emails
+            </h3>
+            <form action="">
+              <div class="flex w-full gap-x-3 items-center">
+                <div class="flex-1">
+                  <input
+                    type="text"
+                    placeholder="Enter your email address"
+                    class="w-full block bg-transparent border border-white/50 py-2 px-3 rounded-full text-white outline-0 focus:outline-0 focus:drop-shadow-sm focus:drop-shadow-white/50"
+                  />
+                </div>
+                <div>
+                  <input
+                    class="py-2 px-4 rounded-full bg-white"
+                    type="submit"
+                    value="SUBSCRIBE"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- important link  -->
+        <div
+          class="flex flex-col gap-y-2.5 text-center sm:flex-row sm:justify-between sm:text-left md:gap-x-3.5 md:max-w-1/2"
+        >
+          <!-- link list Product-blog-pricing-t&c -->
+          <ul class="space-y-2">
+            <li>
+              <a href="" class="hover:text-white/70 transition-colors"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a href="" class="hover:text-white/70 transition-colors">Blog</a>
+            </li>
+            <li>
+              <a href="" class="hover:text-white/70 transition-colors"
+                >Pricings</a
+              >
+            </li>
+            <li>
+              <a href="" class="hover:text-white/70 transition-colors">T&C</a>
+            </li>
+          </ul>
+          <!-- link list facebook-instgram-youtube -->
+          <ul class="space-y-2">
+            <li>
+              <a href="" class="hover:text-white/70 transition-colors"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="" class="hover:text-white/70 transition-colors"
+                >Instgram</a
+              >
+            </li>
+            <li>
+              <a href="" class="hover:text-white/70 transition-colors"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+          <!-- link list changing-licenses-all-templates -->
+          <ul class="space-y-2">
+            <li>
+              <a href="" class="hover:text-white/70 transition-colors"
+                >Changing</a
+              >
+            </li>
+            <li>
+              <a href="" class="hover:text-white/70 transition-colors"
+                >Lincenses</a
+              >
+            </li>
+            <li>
+              <a href="" class="hover:text-white/70 transition-colors"
+                >All Templates</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- footer layer 2  -->
+      <div>
+        <h1
+          class="text-5xl tracking-wider text-center text-white md:text-[100px] lg:text-[160px]"
+        >
+          Parfum
+        </h1>
+      </div>
+      <!-- footer layer 3  -->
+      <div class="flex justify-between text-white">
+        <p>All Right Rerverd</p>
+        <p>&copy; <span class="font-montserrat">2025</span></p>
+      </div>
+    </footer>
+    <!-- js  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
