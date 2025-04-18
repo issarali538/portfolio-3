@@ -6,7 +6,7 @@
     <title>Portfolio-3</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body class="font-playfair tracking-normal bg-gray-100">
+  <body class="font-playfair tracking-normal bg-gray-100 overflow-hidden">
     <header
       class="fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-40 bg-transparent"
     >
@@ -573,6 +573,30 @@
         <p>&copy; <span class="font-montserrat">2025</span></p>
       </div>
     </footer>
+
+    <!-- backdrop  -->
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-screen bg-neutral-500 z-49 opacity-70"
+      id="backdrop"
+    ></div>
+    <!-- warning modal  -->
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mx-auto max-w-sm p-5 rounded-sm overflow-hidden z-[50] bg-neutral-800 text-white space-y-3 ring-2 ring-offset-5 ring-yellow-500 ring-offset-transparent"
+      id="warning-modal"
+    >
+      <p class="tracking-wider">
+        This sample web page contains only this one page. The link in the
+        navigation is not working. Make sure that this is only for showcasing
+        <span class="capitalize italic">front end skills</span>.
+      </p>
+      <div class="text-center" id="ok">
+        <button
+          class="py-2 px-3 rounded-sm bg-yellow-400 text-black cursor-pointer text-xl"
+        >
+          Ok ☺
+        </button>
+      </div>
+    </div>
     <!-- js  -->
     <script src="./script.js"></script>
   </body>
